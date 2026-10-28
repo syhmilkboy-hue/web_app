@@ -1,92 +1,16 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111827">
-  <title>전산 일일 점검</title>
-  <link rel="stylesheet" href="stylee.css">
-  <script src="app.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827"><title>전산 일일 점검</title>
+<link rel="stylesheet" href="stylee.css"><script src="app.js" defer></script>
 </head>
-<body>
-  <div class="app-shell">
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">IT</div>
-        <div>
-          <p class="eyebrow">IT OPERATIONS</p>
-          <h1>전산 일일 점검</h1>
-        </div>
-      </div>
-      <div class="status-pill"><span class="status-dot"></span> 일일 점검 워크스페이스</div>
-    </header>
-
-    <main>
-      <section class="page-intro" aria-labelledby="page-title">
-        <div>
-          <p class="eyebrow">DAILY CHECKLIST</p>
-          <h2 id="page-title">좋은 아침입니다.</h2>
-          <p class="intro-copy">서버 · 백업 · 네트워크 상태를 확인하고 점검 기록을 준비하세요.</p>
-        </div>
-        <div class="date-badge">
-          <span class="date-badge-label">점검 업무</span>
-          <strong>DAILY</strong>
-        </div>
-      </section>
-
-      <section class="panel meta-panel" aria-labelledby="meta-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">CHECK DETAILS</p>
-            <h3 id="meta-title">점검 기본 정보</h3>
-          </div>
-          <span class="section-caption">필수 정보</span>
-        </div>
-
-        <div class="form-grid">
-          <div class="field">
-            <label for="check-date">점검일</label>
-            <input id="check-date" name="check-date" type="date">
-          </div>
-          <div class="field">
-            <label for="inspector-name">점검자</label>
-            <input id="inspector-name" name="inspector-name" type="text" placeholder="점검자 이름 입력" autocomplete="name">
-          </div>
-        </div>
-
-        <div class="action-row">
-          <p class="helper-text">점검 항목과 저장 기능은 다음 단계에서 추가됩니다.</p>
-          <div class="actions">
-            <button class="button button-secondary" id="save-button" type="button">
-              <span aria-hidden="true">▣</span> 저장
-            </button>
-            <button class="button button-primary" id="export-button" type="button">
-              <span aria-hidden="true">⇩</span> CSV 인쇄
-            </button>
-          </div>
-        </div>
-        <p class="notice" id="notice" role="status" aria-live="polite" hidden></p>
-      </section>
-
-      <section class="empty-panel" aria-labelledby="empty-title">
-        <div class="empty-icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none">
-            <rect x="8" y="7" width="32" height="34" rx="5" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M17 17h14M17 24h14M17 31h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <circle cx="35" cy="35" r="7" fill="#172235" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M35 32v6M32 35h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 id="empty-title">점검 항목을 준비 중입니다</h3>
-        <p>이 영역에 서버, 백업, 네트워크 점검 항목과 상태가 표시됩니다.</p>
-        <span class="coming-soon"><span class="status-dot"></span> 다음 단계에서 추가 예정</span>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span>IT OPERATIONS <span class="footer-separator">/</span> DAILY CHECK</span>
-      <span>로컬 화면 · 서버 연결 없음</span>
-    </footer>
-  </div>
-</body>
-</html>
+<body><div class="app-shell">
+<header class="topbar"><div class="brand"><div class="brand-mark" aria-hidden="true">IT</div><div><p class="eyebrow">IT OPERATIONS</p><h1>전산 일일 점검</h1></div></div><div class="status-pill"><span class="status-dot"></span> 일일 점검 워크스페이스</div></header>
+<main>
+<section class="page-intro"><div><p class="eyebrow">DAILY CHECKLIST</p><h2>좋은 아침입니다.</h2><p class="intro-copy">서버 · 백업 · 네트워크 · 보안 · 환경 상태를 확인하고 기록하세요.</p></div><div class="date-badge"><span class="date-badge-label">점검 업무</span><strong>DAILY</strong></div></section>
+<section class="panel meta-panel"><div class="section-heading"><div><p class="eyebrow">CHECK DETAILS</p><h3>점검 기본 정보</h3></div><span class="section-caption">점검 정보</span></div>
+<div class="form-grid"><div class="field"><label for="check-date">점검일</label><input id="check-date" name="check-date" type="date"></div><div class="field"><label for="inspector-name">점검자</label><input id="inspector-name" name="inspector-name" type="text" placeholder="점검자 이름 입력" autocomplete="name"></div></div></section>
+<section class="checklist-section"><div class="section-heading"><div><p class="eyebrow">INSPECTION ITEMS</p><h3>점검 항목</h3></div><span class="section-caption">상태를 선택하고 필요한 메모를 입력하세요.</span></div><div id="checklist-container" class="checklist-container"></div></section>
+</main><footer class="footer"><span>IT OPERATIONS / DAILY CHECK</span><span>로컬 화면 · 저장 기능 미포함</span></footer>
+</div></body></html>
